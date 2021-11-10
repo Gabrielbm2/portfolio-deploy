@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #1e2e2e;
 }
 
@@ -41,18 +41,18 @@ h2 {
 
 .social-media a {
   text-decoration: none;
-  color: #1E1E2A;
+  color: #1e1e2a;
   padding: 1rem 4rem;
-  border: 1px solid #1E1E2A;
+  border: 1px solid #1e1e2a;
   min-width: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 a:hover {
-  background-color: #ffffff
+  background-color: #ffffff;
 }
 
 checkbox-container {
@@ -71,13 +71,13 @@ checkbox-container {
   justify-content: center;
   cursor: pointer;
   z-index: 9999;
-  transition: 400ms ease-in-out 0s
+  transition: 400ms ease-in-out 0s;
 }
 
 .checkbox .trace {
   width: 50px;
   height: 2px;
-  background-color: #1E1E2A;
+  background-color: #1e1e2a;
   position: absolute;
   border-radius: 4px;
   transition: 0.5s ease-in-out;
@@ -85,17 +85,17 @@ checkbox-container {
 
 .checkbox .trace:nth-child(1) {
   top: 26px;
-  transform: rotate(0)
+  transform: rotate(0);
 }
 
 .checkbox .trace:nth-child(2) {
   top: 46px;
-  transform: rotate(0)
+  transform: rotate(0);
 }
 
 .checkbox .trace:nth-child(3) {
   top: 66px;
-  transform: rotate(0)
+  transform: rotate(0);
 }
 
 #toggle {
@@ -103,73 +103,73 @@ checkbox-container {
 }
 
 .menu {
-    position: absolute;
-    top: 28px;
-    right: 30px;
-    background-color: transparent;
-    height: 4px;
-    width: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px #ffffff;
-    z-index: -1;
-    transition: 400ms ease-in-out 0;
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  background-color: transparent;
+  height: 4px;
+  width: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0px #ffffff;
+  z-index: -1;
+  transition: 400ms ease-in-out 0;
 }
 .menu-items {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    visibility: hidden;
-    opacity: 0;
-    transition: 400ms ease-in-out 0s;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: 400ms ease-in-out 0s;
 }
 .menu-items ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .menu-items ul li a {
-    margin: 10px 0;
-    color: #1E1E2A;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 40px;
+  margin: 10px 0;
+  color: #1e1e2a;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 40px;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(1) {
-    transform: rotate(45deg);
-    top: 45px;
+  transform: rotate(45deg);
+  top: 45px;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(2) {
-    transform: translate(-100px);
-    width: 30px;
-    visibility: hidden;
-    opacity: 0;
+  transform: translate(-100px);
+  width: 30px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(3) {
-transform: rotate(-45deg);
-top: 48px;
+  transform: rotate(-45deg);
+  top: 48px;
 }
 
 #toggle:checked + .checkbox {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax #ffffff;
-    z-index: 1;
+  box-shadow: 0px 0px 0px 100vmax #ffffff;
+  z-index: 1;
 }
 
 #toggle:checked ~ .menu-items {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .container {
@@ -197,12 +197,12 @@ top: 48px;
   align-items: center;
   justify-content: center;
   background-color: rgb(219, 207, 178);
-  background-image: url('./img/background.png');
+  background-image: url("./img/background.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(0.5);
-  color: #1E1E2A;
+  color: #1e1e2a;
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
@@ -223,7 +223,7 @@ top: 48px;
 }
 
 .card-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100px;
   width: 100px;
@@ -268,16 +268,23 @@ top: 48px;
 }
 
 .footer {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(219, 207, 178);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(219, 207, 178);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
 }
 
 .description-header {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.header-img {
+  align-self: flex-start;
+  margin-left: 10%;
+  height: 80%;
 }
